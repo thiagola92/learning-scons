@@ -1,0 +1,4 @@
+SharedLibrary('test/lib/libla', ['lib/laconn.c', 'lib/lamsg.c'])
+
+# Linking dynamic library with executable
+Program('main', 'test/main.c', LIBS='la', LIBPATH="test/lib")

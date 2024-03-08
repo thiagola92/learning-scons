@@ -1,0 +1,2 @@
+# Shared/Dynamic library
+SharedLibrary('test/lib/libla', ['lib/laconn.c', 'lib/lamsg.c'])
