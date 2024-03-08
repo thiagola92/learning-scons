@@ -1,0 +1,1 @@
+Program('program', ['main.c', 'prog.c']) # Now will be 'program'

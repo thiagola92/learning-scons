@@ -2,3 +2,10 @@
 *.o
 *.a
 *.so
+
+# Scons
+.sconsign.dblite
+
+# Executables
+main
+program

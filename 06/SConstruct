@@ -1,0 +1,2 @@
+# Glob to select matching files
+Program(Glob('*.c'))

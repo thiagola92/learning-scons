@@ -1,0 +1,9 @@
+# Split white-space characters
+Program(Split('main.c prog.c'))
+
+# If is white-space, it wil split... So you can do this:
+# files = Split("""
+#     main.c
+#     prog.c
+# """)
+# Program(files)

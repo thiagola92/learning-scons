@@ -1,0 +1,3 @@
+# Compile multiple programs
+Program('main.c')
+Program('prog.c')

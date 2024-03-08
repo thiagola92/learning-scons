@@ -1,0 +1,5 @@
+# Keywords in case you want
+Program(
+    target='main',
+    source=['main.c', 'prog.c']
+)

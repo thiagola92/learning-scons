@@ -1,0 +1,2 @@
+# Build static library into 'test/lib/libla.a'
+Library('test/lib/libla', ['lib/laconn.c', 'lib/lamsg.c'])
