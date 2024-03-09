@@ -1,0 +1,2 @@
+# Same as doing "#define SAY_HELLO"
+Program(target='main', source=['main.c', 'prog.c'], CCFLAGS='-DSAY_HELLO')

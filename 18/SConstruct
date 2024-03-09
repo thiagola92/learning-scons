@@ -1,0 +1,11 @@
+# Both return lists!
+prog = Object('prog.c', CCFLAGS='-DPROG_HELLO')
+main = Object('main.c', CCFLAGS='-DMAIN_HELLO')
+
+# In linux will be ['prog.o']
+# In windows will be ['prog.obj']
+print(prog) 
+print(main)
+
+# Now you can have to line for both linux and windows!
+Program(target='main', source=prog + main)

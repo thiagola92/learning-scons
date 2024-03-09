@@ -1,0 +1,9 @@
+# Each object with different defines
+Object('prog.c', CCFLAGS='-DPROG_HELLO')
+Object('main.c', CCFLAGS='-DMAIN_HELLO')
+
+# Linux
+Program(target='main', source=['main.o', 'prog.o'])
+
+# Windows
+#Program(target='main', source=['main.obj', 'prog.obj'])

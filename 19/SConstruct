@@ -1,0 +1,5 @@
+prog = Object('prog.c', CCFLAGS='-DPROG_HELLO')
+main = Object('main.c', CCFLAGS='-DMAIN_HELLO')
+
+# It also accepts list of lists
+Program(target='main', source=[prog, main]) # [['prog.o'], ['main.o']]
