@@ -1,5 +1,4 @@
-Library('test/lib/libla', ['lib/laconn.c', 'lib/lamsg.c'])
+Library(target='test/lib/libla', source=['lib/laconn.c', 'lib/lamsg.c'])
 
 # Linking static library with executable
-# Note: LIBS and LIBPATH accept list!
-Program('test/main.c', LIBS='la', LIBPATH="test/lib")
+Program(source='test/main.c', LIBS=['la'], LIBPATH=['test/lib'])
