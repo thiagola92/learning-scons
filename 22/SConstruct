@@ -1,0 +1,5 @@
+# Documentation says that without this, SCons wouldn't know when you changed hello.h
+# but it's seems to be outdated because I removed and it was able to tell that it changed
+Program(target='main', source=['main.c'], CPPPATH=['.'])
+
+# Documentation session: 6.2

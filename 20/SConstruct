@@ -1,0 +1,6 @@
+# Hardly you will need to specificy something as File() or Dir()
+# Normally SCons know by the context
+file = File('main.c')
+Program(target='main', source=[file])
+
+# There is also Entry() which is used when you don't know the type
