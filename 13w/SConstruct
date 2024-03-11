@@ -1,0 +1,4 @@
+Library(target='test/lib/la', source=['lib/laconn.c', 'lib/lamsg.c'])
+
+# Linking static library with executable
+Program(source='test/main.c', LIBS=['la'], LIBPATH=['test/lib'])

@@ -4,6 +4,13 @@
 *.so
 *.os
 
+# Windows
+*.exe
+*.obj
+*.lib
+*.dll
+*.exp
+
 # Scons
 .sconsign.dblite
 

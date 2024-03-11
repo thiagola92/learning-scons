@@ -1,0 +1,10 @@
+# In linux, I show CCFLAGS in diretory 16
+# In window, I need this for shared libraries right now
+
+SharedLibrary(target='test/lib/la', source=['lib/laconn.c', 'lib/lamsg.c'], CCFLAGS='/DLA_EXPORT_DLL')
+
+# Linking shared library with executable
+Program(target='main', source='test/main.c', LIBS=['la'], LIBPATH=['test/lib'], CCFLAGS='/DLA_IMPORT_DLL')
+# During execution it will search the shared library
+#   In windows, will search at same location as the executable
+#   In linux, will search at locations like /usr/lib
